@@ -3,19 +3,21 @@ body {
     background: rgb(1,0,14);
     background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
     color: white;
+    overflow-x:hidden ;
 }
 
-/*header>div>nav>div:nth-child(2)>ul{
-    list-style: none;
-}
-header>div>nav>div:nth-child(2)>ul>li{
-    display: inline-block;
-    margin: 0 15px;
-}
-header>div>nav>div:nth-child(2)>ul>li>a{
-    color: white;
+/* Style for the social media icons */
+.social-icons a {
     text-decoration: none;
-}*/
+    color: white;
+    font-size: 40px; /* Medium size */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #aaa; /* Slight color change on hover */
+}
+
 #navBar>nav{
     display: flex;
     justify-content: center;
@@ -28,14 +30,6 @@ header>div>nav>div:nth-child(2)>ul>li>a{
     justify-content: space-between;
     /*border: 1px solid red;*/
 }
-/*header>div>nav>div>div:nth-child(2)>ul>li>a{
-    color: white;
-    text-decoration: none;
-}
-header>div>nav>div>div:nth-child(2)>ul>li{
-    display: inline-block;
-    margin: 0 15px;
-}*/
 #navBar>nav>div>div:nth-child(2){
     display: flex;
     align-items: center;
@@ -120,20 +114,10 @@ header>div>nav>div>div:nth-child(2)>ul>li{
 #image{
     display:flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 62px;
 }
 #image>img{
     /*border: 10px solid #FFC300;*/
-}
-
-
-
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
 }
 
 .block {
@@ -151,7 +135,7 @@ body {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     z-index: -1;
-    animation: steam 20s linear infinite;
+    animation: steam 15s linear infinite;
 }
 
 @keyframes steam {
@@ -167,7 +151,7 @@ body {
 }
 
 .block:after {
-    filter: blur(20px);
+    filter: blur(30px);
 }
 
 #homeName{
@@ -194,14 +178,6 @@ body {
 
 
 }
-/*#homeIcons>div:nth-child(1){
-    margin-left:265px;
-    margin-top: 20px;
-}
-#homeIcons>div:nth-child(2){
-    margin-top: 20px;
-    margin-left: 350px;
-}*/
 .homeGrid{
     /*border: 1px solid red;*/
 }
@@ -380,4 +356,3 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
         background-color: #555;
     }
 }
-
