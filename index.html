@@ -8,17 +8,30 @@
     <meta name="author" content=" mr P.A Nipun Prabushitha">
     <title>Nipun Prabushitha</title>
     <link rel="stylesheet" href="assest/style/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
+        /* Style for the social media icons */
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 40px; /* Medium size */
+            margin: 0 10px; /* Spacing between icons */
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #aaa; /* Slight color change on hover */
+        }
 
     </style>
+
 </head>
 <body>
 <header>
     <div id="navBar">
-    <nav>
+    <nav class="fill">
         <div>
-            <img src="assest/images/N 1.png" width="90">
+        <div>
+            <img src="assest/images/N 1.png" width="100">
         </div>
         <div>
         <ul>
@@ -32,30 +45,67 @@
             <li><a href="index.html#contactMe">Contact Me</a></li>
         </ul>
         </div>
+        </div>
     </nav>
     </div>
 </header>
 <main>
-    <section id="home">
+    <section id="homeMain">
         <!--Home-->
-        <div>
-            <img src="assest/images/edit%20main%20html.png" alt="Nipun Prabushitha" width="500">
+        <section id="home">
+        <div class="homeGrid">
+            <div id="image">
+                <div class="block">
+                    <img src="assest/images/homeImage.jpg" alt="Nipun Prabushitha" width="450">
+                </div>
+            </div>
+        </div>
+        <div class="homeGrid" id="circles">   <!--2 circles-->
+            <div>
+            <div class="circle" id="circle1"></div>
+            </div>
+            <div>
+            <div class="circle" id="circle2"></div>
+            </div>
+
+        </div>
+        <div class="homeGrid">
+            <div>
+                <h1>Nipun<br>Prabushitha</h1>
+            </div>
+                <div>
+                <h2>I'm <span>Web Developer</span> </h2>
+            </div>
         </div>
 
-        <div>
-            <h1>Nipun Prabushitha</h1>
-            <h2>I'm a Web Developer</h2>
-        </div>
-
-        <div>
+        <div class="homeGrid" id="homeIcons">
+            <div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nipun.prabushitha?mibextid=ZbWKwL" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nipun-prabushitha-404016294/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_nipun_prabushitha_?igsh=N2tsdnhzYjFueGc2" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/NipunPrabushitha" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!--<div>
            <a href="https://www.facebook.com/nipun.prabushitha?mibextid=ZbWKwL" target= "_blank"><img src="assest/images/Facebook.png"></a>
             <a href="https://www.linkedin.com/in/nipun-prabushitha-404016294/" target="_blank"><img src="assest/images/LinkedIn.png"></a>
             <a href="https://www.instagram.com/_nipun_prabushitha_?igsh=N2tsdnhzYjFueGc2" target="_blank"><img src="assest/images/Instagram.png"></a>
             <a href="https://github.com/NipunPrabushitha" target="_blank"><img src="assest/images/GitHub(1).png"></a>
+                </div>-->
+                </div>
+            <div>
+                <button class="button-85" role="button">HIRE ME</button>
+            </div>
         </div>
-        <div>
-            <button>Hire Me</button>
-        </div>
+        </section>
     </section>
 </main>
 <br>
@@ -64,7 +114,7 @@
     <section>
         <!--About me-->
         <h2>About Me</h2>
-        <div>
+        <div >
             <img src="assest/images/DSC_7329-photoaidcom-cropped 2.png" alt="About Me" width="300">
         </div>
         <div>
