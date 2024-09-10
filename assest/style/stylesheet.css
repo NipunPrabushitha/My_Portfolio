@@ -1,0 +1,383 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(1,0,14);
+    background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
+    color: white;
+}
+
+/*header>div>nav>div:nth-child(2)>ul{
+    list-style: none;
+}
+header>div>nav>div:nth-child(2)>ul>li{
+    display: inline-block;
+    margin: 0 15px;
+}
+header>div>nav>div:nth-child(2)>ul>li>a{
+    color: white;
+    text-decoration: none;
+}*/
+#navBar>nav{
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+#navBar>nav>div{
+    width: 85%;
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+}
+/*header>div>nav>div>div:nth-child(2)>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+header>div>nav>div>div:nth-child(2)>ul>li{
+    display: inline-block;
+    margin: 0 15px;
+}*/
+#navBar>nav>div>div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+#navBar>nav>div>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+#navBar>nav>div>div:nth-child(1)>img{
+    margin-top:15px;
+}
+
+#home{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    width: 1650px;
+    height: 780px;
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#home>div:nth-child(1){
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+#circle1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #FFC300;
+}
+#circle2{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #FFC300;
+}
+#homeMain{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /*border: 3px solid yellow;*/
+}
+#home>div:nth-child(3)>div:nth-child(2)>h2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin:0;
+    margin-bottom: 40px;
+}
+#home>div:nth-child(3)>div:nth-child(2)>h2>span{
+    color: #FFC300;
+}
+.homeGrid{
+    position: relative;
+}
+#home>div:nth-child(2)>div:nth-child(1){
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+}
+#home>div:nth-child(2)>div:nth-child(2){
+    position: absolute;
+    bottom: -35px;
+    right: 60px;
+}
+#home>div:nth-child(3)>div:nth-child(1)>h1{
+    font-size: 120px;
+    color: #FFC300;
+    text-align: center;
+    margin:0;
+    margin-bottom: 20px;
+}
+#image{
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#image>img{
+    /*border: 10px solid #FFC300;*/
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.block {
+    position: relative;
+
+}
+
+.block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    background: linear-gradient(45deg, #FFC300,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),#FFC300);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(20px);
+}
+
+#homeName{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#homeIcons>div{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+}
+#homeIcons>div:nth-child(1){
+    margin-top:10px;
+    margin: 10px;
+}
+#homeIcons>div:nth-child(2){
+    margin-top: 40px;
+}
+#homeIcons>div:nth-child(2)>button{
+
+
+}
+/*#homeIcons>div:nth-child(1){
+    margin-left:265px;
+    margin-top: 20px;
+}
+#homeIcons>div:nth-child(2){
+    margin-top: 20px;
+    margin-left: 350px;
+}*/
+.homeGrid{
+    /*border: 1px solid red;*/
+}
+
+                                                       /* CSS */
+                                                   .button-85 {
+                                                       padding: 0.6em 2em;
+                                                       border: none;
+                                                       outline: none;
+                                                       color: rgb(255, 255, 255);
+                                                       background: #111;
+                                                       cursor: pointer;
+                                                       position: relative;
+                                                       z-index: 0;
+                                                       border-radius: 10px;
+                                                       user-select: none;
+                                                       -webkit-user-select: none;
+                                                       touch-action: manipulation;
+                                                       font-size: 20px;
+                                                   }
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+/*Nav Bar*/
+nav {
+    margin: 0 auto;
+    /*background: #fff;*/
+    padding: 20px 0;
+    box-shadow: 0px 0.5px 0px #dedede;
+}
+
+/* Targeting the nested ul */
+nav > div > div:nth-child(2) > ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling the li elements */
+nav > div > div:nth-child(2) > ul > li {
+    display: inline-block;
+}
+
+/* Styling the a elements */
+nav > div > div:nth-child(2) > ul > li > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+/* Hover effect for the links */
+nav > div > div:nth-child(2) > ul > li > a:hover {
+    color: #ffffff;
+}
+
+/* Adding the stroke effect */
+nav.stroke > div > div:nth-child(2) > ul > li > a {
+    position: relative;
+}
+
+/* Stroke effect when hovering over the link */
+nav.stroke > div > div:nth-child(2) > ul > li > a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+    transition: all 0.2s;
+}
+
+nav.stroke > div > div:nth-child(2) > ul > li > a:hover:after {
+    width: 100%;
+}
+
+/* Fill effect */
+nav.fill > div > div:nth-child(2) > ul > li > a {
+    transition: all 2s;
+    position: relative;
+}
+
+nav.fill > div > div:nth-child(2) > ul > li > a:after {
+    text-align: left;
+    content: '';
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #aaa;
+    height: 1px;
+    width: 0;
+    transition: all 0.2s;
+}
+
+nav.fill > div > div:nth-child(2) > ul > li > a:hover {
+    color: #ffffff;
+    z-index: 1;
+}
+
+nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
+    z-index: -10;
+    animation: fill 0.4s forwards;
+    opacity: 1;
+    width: 100%;
+}
+
+/* Fill keyframe animation */
+@keyframes fill {
+    0% {
+        width: 0;
+        background-color: #aaa;
+    }
+    100% {
+        width: 100%;
+        background-color: #555;
+    }
+}
+
