@@ -4,6 +4,10 @@ body {
     background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
     color: white;
     overflow-x:hidden ;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* Style for the social media icons */
@@ -21,11 +25,9 @@ body {
 #navBar>nav{
     display: flex;
     justify-content: center;
-    /*border: 1px solid red;*/
 }
 #navBar>nav>div{
     width: 85%;
-    height:60px;
     display:flex;
     justify-content: space-between;
     /*border: 1px solid red;*/
@@ -43,7 +45,13 @@ body {
 #navBar>nav>div>div:nth-child(1)>img{
     margin-top:15px;
 }
-
+#navigation{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: rgb(1,0,14);
+    background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
+}
 #home{
     position: absolute;
     left: 0;
@@ -61,23 +69,35 @@ body {
 #home>div:nth-child(1){
     grid-column: 2/3;
     grid-row: 1/4;
+    /*border: 1px solid red;*/
 }
 #circle1{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background: #FFC300;
+    animation: pop 1s infinite;
 }
 #circle2{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background: #FFC300;
+    animation: pop 1s infinite;
+}
+@keyframes pop {
+    0%, 100% {
+        transform: scale(1);      /* Normal size at the beginning and end */
+    }
+    50% {
+        transform: scale(1.2);    /* Scale up the circle to 1.2 times its size */
+    }
 }
 #homeMain{
     position: relative;
     width: 100%;
     height: 800px;
+    padding-top:200px
     /*border: 3px solid yellow;*/
 }
 #home>div:nth-child(3)>div:nth-child(2)>h2{
@@ -97,7 +117,6 @@ body {
     position: absolute;
     top: 40px;
     left: 40px;
-
 }
 #home>div:nth-child(2)>div:nth-child(2){
     position: absolute;
@@ -114,17 +133,21 @@ body {
 #image{
     display:flex;
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 6%;
 }
-#image>img{
-    /*border: 10px solid #FFC300;*/
-}
+/*#homePhoto>img{
+    !*border: 10px solid #FFC300;*!
+    width: 450px;
+    height:auto;
+}*/
 
 .block {
     position: relative;
 
 }
-
+.fill{
+    padding: 0;
+}
 .block:before, .block:after {
     content: '';
     position: absolute;
@@ -175,7 +198,6 @@ body {
     margin-top: 40px;
 }
 #homeIcons>div:nth-child(2)>button{
-
 
 }
 .homeGrid{
@@ -355,4 +377,127 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
         width: 100%;
         background-color: #555;
     }
+}
+#about{
+    padding-top: 100px;
+}
+#about>h2{
+    display:flex;
+    justify-content: center;
+}
+#about>div{
+    display: flex;
+    align-items: center;
+}
+#about>div>div:nth-child(2){
+
+}
+#aboutPhoto{
+    margin: 100px;
+}
+#aboutPhoto>img{
+    width:500px;
+    height: auto;
+}
+#about>div>div:nth-child(2)>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+#aboutDis{
+ margin: 100px;
+}
+.about-description p {
+    font-size: 1.5rem;           /* Set text size to 1.2rem */
+    line-height: 1.8;            /* Improve readability with proper line height */
+    color: #ffffff;                 /* Use a subtle gray color for softer text */
+    font-weight: 400;            /* Regular font weight */
+    text-align: justify;         /* Justify text for a cleaner appearance */
+    margin-bottom: 20px;         /* Add space after paragraph */
+}
+.first-word {
+    font-size: 3rem;         /* Increase font size */
+    font-weight: bold;         /* Make it bold */
+    color: #ffffff;            /* White color */
+    margin-right: 5px;         /* Add a little space after the first word */
+}
+.section-title {
+    font-family: 'Arial', sans-serif;   /* Clean, common font */
+    font-size: 3rem;                    /* Moderate size for clear visibility */
+    font-weight: bold;                  /* Bold to emphasize the title */
+    color: #FFC300;                        /* Dark color for good readability */
+    margin-top:20px;
+}
+.CVicon{
+    filter: invert(100%);   /* Invert the color to white */
+}
+
+
+
+
+
+/*Media query*/
+
+
+
+@media all and (min-width: 1024px) and (max-width:1440px){
+    #home{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom:0;
+        margin: auto;
+        width: 900px;
+        height: 600px;
+        /*border: 1px solid red;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 3px solid red;
+    }
+    #homePhoto>img{
+        width:300px;
+        height:auto;
+    }
+    #circle1{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    #circle2{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    #homeMain{
+        position: relative;
+        width: 100%;
+        height: 650px;
+        border: 3px solid yellow;
+    }
+    #home>div:nth-child(3)>div:nth-child(2)>h2{
+        font-size: 35px;
+        text-align: center;
+        margin:0;
+        margin-bottom: 30px;
+    }
+    #home>div:nth-child(2)>div:nth-child(1){
+        position: absolute;
+        top: 70px;
+        left: 40px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width:1023px){
+
+}
+@media all and (min-width:425px) and (max-width: 767px){
+
+}
+@media all and (min-width:375px) and (max-width: 424px){
+
+}
+@media all and (min-width:320px) and (max-width: 374px){
+
 }

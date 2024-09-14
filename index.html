@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<header>
+<header id="navigation">
     <div id="navBar">
         <nav class="fill">
             <div>
@@ -42,7 +42,7 @@
         <section id="home">
             <div class="homeGrid">
                 <div id="image">
-                    <div class="block">
+                    <div class="block" id="homePhoto">
                         <img src="assest/images/homeImage.jpg" alt="Nipun Prabushitha" width="450">
                     </div>
                 </div>
@@ -81,12 +81,6 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
-                    <!--<div>
-               <a href="https://www.facebook.com/nipun.prabushitha?mibextid=ZbWKwL" target= "_blank"><img src="assest/images/Facebook.png"></a>
-                <a href="https://www.linkedin.com/in/nipun-prabushitha-404016294/" target="_blank"><img src="assest/images/LinkedIn.png"></a>
-                <a href="https://www.instagram.com/_nipun_prabushitha_?igsh=N2tsdnhzYjFueGc2" target="_blank"><img src="assest/images/Instagram.png"></a>
-                <a href="https://github.com/NipunPrabushitha" target="_blank"><img src="assest/images/GitHub(1).png"></a>
-                    </div>-->
                 </div>
                 <div>
                     <button class="button-85" role="button">HIRE ME</button>
@@ -98,17 +92,21 @@
 <br>
 <br>
 <main>
-    <section>
+    <section id="about">
         <!--About me-->
-        <h2>About Me</h2>
-        <div >
+        <h2 class="section-title">About Me</h2>
+        <div>
+        <div id="aboutPhoto">
             <img src="assest/images/DSC_7329-photoaidcom-cropped 2.png" alt="About Me" width="300">
         </div>
         <div>
-            <p> I’m a Software Engineering student at the Institute of Java and Software Engineering (IJSE). As a highly competent IT professional, I have a proven track record in developing software systems, managing databases, and designing websites. My strong technical abilities, coupled with excellent interpersonal skills, enable me to interact effectively with a diverse range of clients. I am always eager to take on new challenges that allow me to grow and further refine my IT skills. My greatest passion is leveraging my technical expertise to benefit others and contribute to the success of organizations.</p>
+        <div id="aboutDis" class="about-description">
+            <p><span class="first-word">I’m</span>a Software Engineering student at the Institute of Java and Software Engineering (IJSE). As a highly competent IT professional, I have a proven track record in developing software systems, managing databases, and designing websites. My strong technical abilities, coupled with excellent interpersonal skills, enable me to interact effectively with a diverse range of clients. I am always eager to take on new challenges that allow me to grow and further refine my IT skills. My greatest passion is leveraging my technical expertise to benefit others and contribute to the success of organizations.</p>
         </div>
-        <div>
-            <a><button><img src="assest/images/Download.png" width="15"> Download CV</button></a>
+        <div id="cvButton">
+            <a><button class="button-85" role="button"><img class="CVicon" src="assest/images/Download.png" width="15"> Download CV</button></a>
+        </div>
+        </div>
         </div>
     </section>
 </main>
