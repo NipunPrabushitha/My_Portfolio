@@ -464,9 +464,9 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
     display: flex;
     align-items: center;
 }
-/*.eduImage{
+.eduImage{
 margin: 50px;
-}*/
+}
 /*.eduImage>img{
     width: 150px;
 }*/
