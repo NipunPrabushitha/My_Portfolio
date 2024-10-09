@@ -378,7 +378,7 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
         background-color: #555;
     }
 }
-#about{
+.Topic{
     padding-top: 100px;
 }
 #about>h2{
@@ -429,11 +429,51 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
     font-size: 3rem;                    /* Moderate size for clear visibility */
     font-weight: bold;                  /* Bold to emphasize the title */
     color: #FFC300;                        /* Dark color for good readability */
-    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
 }
 .CVicon{
     filter: invert(100%);   /* Invert the color to white */
 }
+.edu{
+    display: flex;
+    justify-content: center;
+}
+
+#educationSection{
+    display: flex;
+    justify-content: center;
+}
+#educationSection>div{
+    width: 80%;
+}
+/*#educationSection>div>div:first-child{
+    display: flex;
+    justify-content: flex-start;
+}
+#educationSection>div>div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+}
+#educationSection>div>div:nth-child(3){
+    display: flex;
+    justify-content: flex-start;
+}*/
+/*.eduDetail{
+    display: flex;
+    align-items: center;
+}*/
+/*.eduImage{
+margin: 50px;
+}*/
+/*.eduImage>img{
+    width: 150px;
+}*/
+/*.edutext{
+    text-align: end;
+}*/
+
 
 
 
