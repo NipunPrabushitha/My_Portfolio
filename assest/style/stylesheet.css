@@ -448,7 +448,7 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
 #educationSection>div{
     width: 80%;
 }
-/*#educationSection>div>div:first-child{
+#educationSection>div>div:first-child{
     display: flex;
     justify-content: flex-start;
 }
@@ -459,7 +459,7 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
 #educationSection>div>div:nth-child(3){
     display: flex;
     justify-content: flex-start;
-}*/
+}
 /*.eduDetail{
     display: flex;
     align-items: center;
