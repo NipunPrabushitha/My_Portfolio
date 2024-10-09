@@ -460,10 +460,10 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
     display: flex;
     justify-content: flex-start;
 }
-/*.eduDetail{
+.eduDetail{
     display: flex;
     align-items: center;
-}*/
+}
 /*.eduImage{
 margin: 50px;
 }*/
