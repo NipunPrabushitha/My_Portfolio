@@ -23,6 +23,7 @@ html{
 }
 
 #navBar>nav{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -45,21 +46,29 @@ html{
 #navBar>nav>div>div:nth-child(1)>img{
     margin-top:15px;
 }
+#navBar{
+    width: 100%;
+}
 #navigation{
     position: fixed;
+    display: flex;
+    justify-content: center;
     width: 100%;
     z-index: 9999;
     background: rgb(1,0,14);
     background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
 }
+#sectionMain{
+    width:100%;
+}
 #home{
-    position: absolute;
+    /*position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom:0;
-    margin: auto;
-    width: 1650px;
+    margin: auto;*/
+    width: 80%;
     height: 780px;
     /*border: 1px solid red;*/
     display: grid;
@@ -94,10 +103,11 @@ html{
     }
 }
 #homeMain{
-    position: relative;
+    display: flex;
+    justify-content:center;
     width: 100%;
     height: 800px;
-    padding-top:200px
+    padding-top:120px
     /*border: 3px solid yellow;*/
 }
 #home>div:nth-child(3)>div:nth-child(2)>h2{
@@ -473,6 +483,86 @@ margin: 50px;
 .edutext{
     text-align: end;
 }
+#prjAll{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.prjCard{
+    width: 320px;
+    height: 500px;
+    border: 1px solid red;
+    background: white;
+    border-radius:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prjCard>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prjDescription{
+    width:90%;
+}
+.prjDescription>p{
+    color: #111111;
+}
+
+
+                                                   .button-27 {
+                                                       appearance: none;
+                                                       background-color: #000000;
+                                                       border: 2px solid #1A1A1A;
+                                                       border-radius: 15px;
+                                                       box-sizing: border-box;
+                                                       color: #FFFFFF;
+                                                       cursor: pointer;
+                                                       display: inline-block;
+                                                       font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                                                       font-size: 16px;
+                                                       font-weight: 600;
+                                                       line-height: normal;
+                                                       margin: 0;
+                                                       min-height: 60px;
+                                                       min-width: 0;
+                                                       outline: none;
+                                                       padding: 16px 24px;
+                                                       text-align: center;
+                                                       text-decoration: none;
+                                                       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                                                       user-select: none;
+                                                       -webkit-user-select: none;
+                                                       touch-action: manipulation;
+                                                       width: 100%;
+                                                       will-change: transform;
+                                                   }
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+/*.prjGHButton>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+
+
 
 
 
@@ -484,20 +574,52 @@ margin: 50px;
 
 
 @media all and (min-width: 1024px) and (max-width:1440px){
+    body {
+        overflow-x:hidden;
+    }
+
+    #navBar>nav>div{
+        width: 85%;
+        display:flex;
+        justify-content: space-between;
+        /*border: 1px solid red;*/
+    }
+    #navBar>nav>div>div:nth-child(2){
+        display: flex;
+        align-items: center;
+    }
+    #navBar>nav>div>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*border: 1px solid red;*/
+    }
+    #navBar>nav>div>div:nth-child(1)>img{
+        margin-top:15px;
+    }
+    #navBar{
+        width: 100vw;
+    }
+    #navigation{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        z-index: 9999;
+    }
+
+
+
+
+
     #home{
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom:0;
-        margin: auto;
-        width: 900px;
-        height: 600px;
+        width: 100%;
+        height: 80vh;
         /*border: 1px solid red;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        border: 3px solid red;
+        /*border: 3px solid red;*/
     }
     #homePhoto>img{
         width:300px;
@@ -515,9 +637,9 @@ margin: 50px;
     }
     #homeMain{
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 650px;
-        border: 3px solid yellow;
+        /*border: 3px solid yellow;*/
     }
     #home>div:nth-child(3)>div:nth-child(2)>h2{
         font-size: 35px;
