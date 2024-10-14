@@ -711,9 +711,61 @@ body{
     margin-bottom: 50px;
 }
 
+.container {
+    margin: 0 auto;
+    width: 60%;
+}
 
 
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
 
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        flex: 7;
+    }
+}
+
+.item-1 {
+    background-image: url(../images/IMG-20240116-WA0078.png);
+}
+
+.item-2 {
+    background-image: url(../images/IMG-20240425-WA0052.png);
+}
+
+.item-3 {
+    background-image: url(../images/IMG-20240503-WA0047.png);
+}
+
+.item-4 {
+    background-image: url(../images/20210321105151_DT0A6630.png);
+}
+
+.item-5 {
+    background-image: url(../images/IMG-20240425-WA0052.png);
+}
+.gallery{
+    width: 100%;
+    height:100%;
+}
+#galleryFull{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
 
 
 /*Media query*/
