@@ -660,12 +660,56 @@ body{
             transform: translateZ(0px);
         }
     }
-
+}
+.prjCard>div>div:nth-child(2)>h3{
+    color: black;
 }
 
-
-
-
+#assignmentSec{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#assignmentFull {
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#asgn{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.assignmentClipBoard>img{
+    width:250px;
+}
+.assignmentG\&V>img{
+    width:40px;
+}
+.assignmentClipBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.assignmentG\&V{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.assignmentNumber{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.assignmentCard{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
 
 
 
