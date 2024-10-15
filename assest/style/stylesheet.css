@@ -792,7 +792,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -988,6 +988,8 @@ body{
     display:none;
 }
 
+
+
 /* Make form look nice on smaller screens */
 @media only screen and (max-width: 580px) {
     #contact-form{
@@ -1000,6 +1002,163 @@ body{
     }
 }
 
+
+/*Skills Section*/
+
+
+.containerH__bg,
+.hexagons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.containerH {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.containerH__bg {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Hexagons Animations */
+
+@keyframes fadeHexagon {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20%,
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hexagons {
+    min-width: 340px;
+    text-align: center;
+}
+
+.hexagons__row:first-of-type {
+    transform: translate3d(0, 22%, 0);
+}
+
+.hexagons__row:last-of-type {
+    transform: translate3d(0, -22%, 0);
+}
+
+.hexagons__cell {
+    display: inline-block;
+    position: relative;
+    width: 180px; /* Doubled width */
+    height: 110px; /* Doubled height */
+    background-color: #14172a;
+    margin: 55px 4px; /* Adjusted margin */
+    animation: fadeHexagon infinite cubic-bezier(0.445, 0.05, 0.55, 0.95) 3.5s;
+    /*background-image: url(../images/wheel.png); !* Add your image URL here *!
+    background-size:60%; !* Ensures the image covers the hexagon *!
+    background-position: center; !* Centers the image *!*/
+    background-repeat: no-repeat; /* Prevents image repetition */
+}
+
+.hexagons__cell:before,
+.hexagons__cell:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-left: 90px solid transparent; /* Adjusted for larger hexagons */
+    border-right: 90px solid transparent; /* Adjusted for larger hexagons */
+}
+
+.hexagons__cell:before {
+    bottom: 100%;
+    border-bottom: 55px solid #14172a; /* Adjusted for larger hexagons */
+}
+
+.hexagons__cell:after {
+    top: 100%;
+    border-top: 55px solid #14172a; /* Adjusted for larger hexagons */
+}
+
+.hexagons__cell--1 {
+    animation-delay: calc((3.5s / 14) * 1);
+}
+
+.hexagons__cell--2 {
+    animation-delay: calc((3.5s / 14) * 2);
+}
+
+.hexagons__cell--3 {
+    animation-delay: calc((3.5s / 14) * 3);
+}
+
+.hexagons__cell--4 {
+    animation-delay: calc((3.5s / 14) * 4);
+}
+
+.hexagons__cell--5 {
+    animation-delay: calc((3.5s / 14) * 5);
+}
+
+.hexagons__cell--6 {
+    animation-delay: calc((3.5s / 14) * 6);
+}
+
+.hexagons__cell--7 {
+    animation-delay: calc((3.5s / 14) * 7);
+}
+.hexagons__cell--1{
+    background-image: url(../images/Cicon.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--2{
+    background-image: url(../images/CSSI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--3{
+    background-image: url(../images/htmlI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--4{
+    background-image: url(../images/photoshopI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--5{
+    background-image: url(../images/JSI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--6{
+    background-image: url(../images/mySQLI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hexagons__cell--7{
+    background-image: url(../images/javaI.png); /* Add your image URL here */
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
