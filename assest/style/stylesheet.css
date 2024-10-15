@@ -1159,6 +1159,65 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+#contactMeMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactInfoFull{
+    width: 90%;
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CInfoMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#CInfoTopic{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#CInfoTopic>h3{
+    font-size: 3em;
+}
+#contactInfoIcons{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    height: 300px;
+}
+#contactInfoIcons>img{
+    width:40px;
+    height:auto;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#conInfoDesSub{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#contactInfoDes{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    height: 300px;
+}
+#contactInfoDes>p{
+    font-size: 1.5em;
+}
+#contactMeImage>img{
+    width: 1000px;
+    height: auto;
+}
 
 
 
