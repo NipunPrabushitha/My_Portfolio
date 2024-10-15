@@ -907,100 +907,7 @@ body{
 
 /*Contact Me*/
 
-#contactFull{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contactSub{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#ContactTop>h1 {
-    margin: 10px 0 0 0;
-    margin: 30px;
-}
-#ContactTop{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#contact-form {
-    background-color: rgba(205, 189, 40, 0.9);
-    padding: 10px 20px 30px 20px;
-    width:40%;
-    border-radius:7px;
-    -webkit-border-radius:7px;
-    -moz-border-radius:7px;
-}
-#contact-form input,
-#contact-form select,
-#contact-form textarea,
-#contact-form label {
-    font-size: 15px;
-    margin-bottom: 2px;
-    font-family: Arial, san-serif;
-}
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-    width:100%;
-    background: #fff;
-    border: 0;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    margin-bottom: 25px;
-    padding: 5px;
-}
-#contact-form input:focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
-    background-color: #E5E6E7;
-}
-#contact-form textarea {
-    width:100%;
-    height: 150px;
-}
-#contact-form button[type="submit"] {
-    cursor:pointer;
-    width:100%;
-    border:none;
-    background:#991D57;
-    color:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    border-radius:5px;
-}
-#contact-form .required {
-    font-weight:bold;
-    color: #E5E6E7;
-}
 
-/* Hide success/failure message
-   (especially since the php is missing) */
-#failure, #success {
-    color: #6EA070;
-    display:none;
-}
-
-
-
-/* Make form look nice on smaller screens */
-@media only screen and (max-width: 580px) {
-    #contact-form{
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-}
 
 
 /*Skills Section*/
@@ -1159,6 +1066,101 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+#contactFull{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactSub{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ContactTop>h1 {
+    margin: 10px 0 0 0;
+    margin: 30px;
+}
+#ContactTop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-form {
+    padding: 10px 20px 30px 20px;
+    width:40%;
+    border-radius:7px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-family: Arial, san-serif;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width:100%;
+    background: #fff;
+    border: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    background-color: #E5E6E7;
+}
+#contact-form textarea {
+    width:100%;
+    height: 150px;
+}
+#contact-form button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:#991D57;
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+}
+#contact-form .required {
+    font-weight:bold;
+    color: #E5E6E7;
+}
+
+/* Hide success/failure message
+   (especially since the php is missing) */
+#failure, #success {
+    color: #6EA070;
+    display:none;
+}
+
+
+
+/* Make form look nice on smaller screens */
+@media only screen and (max-width: 580px) {
+    #contact-form{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
 #contactMeMain{
     width: 100%;
     display: flex;
@@ -1166,12 +1168,12 @@ body{
     align-items: center;
 }
 #contactInfoFull{
-    width: 90%;
-    height: 600px;
-    border: 1px solid red;
+    width: 60%;
+    height: 600px; /*blnnaaaaaaaaaa*/
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 #CInfoMain{
     display: flex;
@@ -1215,8 +1217,15 @@ body{
     font-size: 1.5em;
 }
 #contactMeImage>img{
-    width: 1000px;
+    width: 450px;
     height: auto;
+    margin-right: 60px;
+    border-radius: 30px;
+}
+#CFullImg{
+    width: 100%;
+    background-image: url(../images/pexels-eberhardgross-1287075.jpg);  /*pexels-instawally-176851.jpg*/
+    background-size: cover;
 }
 
 
