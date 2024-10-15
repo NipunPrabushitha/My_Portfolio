@@ -438,7 +438,7 @@
     </section>
 </main>
 <main>
-    <section class="Topic">
+    <section>
         <div>
             <h1 class="section-title" >My Photography</h1>
         </div>
@@ -497,8 +497,10 @@
     </section>
 </main>
 <main>
-    <section>
-        <div>Contact Me</div>
+    <section id="contactMe" class="Topic">
+        <div>
+           <h1 class="section-title" >Contact Me</h1>
+        </div>
         <div>
             <img src="assest/images/nipun%20contact%20me.png" width="100px" />
         </div>
@@ -518,14 +520,42 @@
             <p>Phone: +94 78 605 4430</p>
             <p>Address: 131/B Induruwewawatta, Watinapaha.</p>
         </div>
-        <div>
-            <input type="text" placeholder="Name"><br>
-            <input type="email" placeholder="Email"><br>
-            <input type="text" placeholder="Contact No"><br>
-            <textarea placeholder="Enter Massage Here" rows="10" cols="20"></textarea><br>
-            <br>
-            <button>Submit</button>
+        <div id="contactFull">
+        <div id="contactSub">
+        <div id="contact-form">
+            <div id="ContactTop">
+                <h1>Contact Me</h1>
+            </div>
+            <p id="failure">Oopsie...message not sent.</p>
+            <p id="success">Your message was sent successfully. Thank you!</p>
+
+            <form method="post" action="/">
+                <div>
+                    <label for="name">
+                        <span class="required">Name: *</span>
+                        <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        <span class="required">Email: *</span>
+                        <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                    </label>
+                </div>
+                <div>
+                    <label for="message">
+                        <span class="required">Message: *</span>
+                        <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button name="submit" type="submit" id="submit" >SEND</button>
+                </div>
+            </form>
         </div>
+        </div>
+        </div>
+
     </section>
 </main>
 
