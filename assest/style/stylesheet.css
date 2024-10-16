@@ -1581,7 +1581,7 @@ footer {
         height: auto;
     }
 
-    /*!*My Photography*!
+    /*My Photography*/
 
     .containerPhoto{
         width: 750px;
@@ -1589,7 +1589,7 @@ footer {
     }
 
     .containerPhoto .slidePhoto .itemPhoto{
-        width: 100px;  !*blnna*!
+        width: 100px;  /*blnna*/
         height: 180px;
     }
 
@@ -1608,21 +1608,21 @@ footer {
         left: 50%;
     }
     .slidePhoto .itemPhoto:nth-child(4){
-        left: calc(50% + 100px);  !*blnna*!
+        left: calc(50% + 100px);  /*blnna*/
     }
     .slidePhoto .itemPhoto:nth-child(5){
-        left: calc(50% + 200px);   !*blnna*!
+        left: calc(50% + 200px);   /*blnna*/
     }
 
-    !* here n = 0, 1, 2, 3,... *!
+    /* here n = 0, 1, 2, 3,... */
     .slidePhoto .itemPhoto:nth-child(n + 6){
-        left: calc(50% + 300px); !*blnna*!
+        left: calc(50% + 300px); /*blnna*/
         opacity: 0;
     }
     #PhotographySEC{
         width: 100%;
         height: 600px;
-    }*/
+    }
 
 
     /*Assignments*/
