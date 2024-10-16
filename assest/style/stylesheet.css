@@ -490,6 +490,8 @@ margin: 50px;
 .edutext{
     text-align: end;
 }
+
+
 #prjAll{
     margin-bottom: 100px;
     margin-top: 100px;
@@ -568,106 +570,6 @@ margin: 50px;
     align-items: center;
 }
 
-
-body{
-    font-family: 'Oswald', sans-serif;
-    background-color: #212121;
-    #prj{
-        width: 90%;
-        max-width:80%;
-        margin: 0 auto;
-        .row{
-            align-items: center;
-            height: 100vh;
-        }
-    }
-}
-.card{
-    display: flex;
-    justify-content: space-evenly;
-    height: 300px;
-    width: 100%;
-    margin: 10px 0;
-    transition: ease all;
-    perspective: 1200px;
-    &:hover{
-        .cover{
-            transform: rotateX(0deg) rotateY(-180deg);
-            &:before{
-                transform: translateZ(30px);
-            }
-            &:after{
-                opacity:10%;
-            }
-            h1{
-                transform: translateZ(100px);
-            }
-            .price{
-                transform: translateZ(60px);
-            }
-            a{
-                transform: translateZ(-60px) rotatey(-180deg);
-            }
-        }
-    }
-
-    .cover{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        transform-style: preserve-3d;
-        transition: ease all 2.3s;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        &:before{
-            content: '';
-            position: absolute;
-            border: 5px solid rgba(255,255,255,.5);
-            box-shadow: 0 0 12px rgba(0,0,0,.3);
-            top:20px;
-            left:20px;
-            right:20px;
-            bottom:20px;
-            z-index: 2;
-            transition: ease all;
-            transform-style: preserve-3d;
-            transform: translateZ(0px);
-        }
-        &:after{
-            content: '';
-            position: absolute;
-            top:0px;
-            left:0px;
-            right:0px;
-            bottom:0px;
-            z-index: 2;
-            transition: ease all 1.3s;
-            background: rgba(0,0,0,.4);
-        }
-        &.item-a{
-            background-image: url('https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80');
-        }
-        &.item-b{
-            background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80');
-        }
-        &.item-c{
-            background-image: url('https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80');
-        }
-        h1{
-            font-weight: 600;
-            position: absolute;
-            bottom: 55px;
-            left: 50px;
-            color: white;
-            transform-style: preserve-3d;
-            transition: ease all;
-            z-index:3;
-            font-size: 3em;
-            transform: translateZ(0px);
-        }
-    }
-}
 .prjCard>div>div:nth-child(2)>h3{
     color: black;
 }
@@ -1581,6 +1483,88 @@ footer {
         height: auto;
     }
 
+    /*About Me*/
+
+    #aboutPhoto{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 60px;
+    }
+    #aboutPhoto>img{
+        width:310px;
+        height: auto;
+    }
+    #about>div>div:nth-child(2)>div:nth-child(2){
+        margin: 50px;
+    }
+    #aboutDis{
+        margin: 50px;
+    }
+    .about-description p {
+        font-size: 1.2rem;           /* Set text size to 1.2rem */
+        line-height: 1.4;            /* Improve readability with proper line height */
+        font-weight: 400;            /* Regular font weight */
+        margin-bottom: 10px;         /* Add space after paragraph */
+    }
+    .first-word {
+        font-size: 2rem;         /* Increase font size */
+        font-weight: bold;         /* Make it bold */
+        margin-right: 5px;         /* Add a little space after the first word */
+    }
+
+
+    /*Projects*/
+
+    #prjAll{
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+    .prjCard{
+        width: 280px;
+        height: 450px;
+        background: #aaaaaa;
+        border-radius:5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #prjImage1>img{
+        width: 235px;
+        height: auto;
+    }
+    #prjImage2>img{
+        width: 240px;
+        height: auto;
+    }
+
+    #prjImage3>img{
+        width: 220px;
+        height: auto;
+    }
+
+
+    /*Assignments*/
+    #assignmentSec{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .assignmentClipBoard>img{
+        width:180px;
+    }
+    .assignmentG\&V>img{
+        width:30px;
+    }
+    .assignmentCard{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    /*Gallery*/
+
+
+
     /*My Photography*/
 
     .containerPhoto{
@@ -1625,52 +1609,7 @@ footer {
     }
 
 
-    /*Assignments*/
-    #assignmentSec{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);
-    }
-    .assignmentClipBoard>img{
-        width:180px;
-    }
-    .assignmentG\&V>img{
-        width:30px;
-    }
-    .assignmentCard{
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-bottom: 30px;
-    }
 
-    /*About Me*/
-
-    #aboutPhoto{
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 60px;
-    }
-    #aboutPhoto>img{
-        width:310px;
-        height: auto;
-    }
-    #about>div>div:nth-child(2)>div:nth-child(2){
-        margin: 50px;
-    }
-    #aboutDis{
-        margin: 50px;
-    }
-    .about-description p {
-        font-size: 1.2rem;           /* Set text size to 1.2rem */
-        line-height: 1.4;            /* Improve readability with proper line height */
-        font-weight: 400;            /* Regular font weight */
-        margin-bottom: 10px;         /* Add space after paragraph */
-    }
-    .first-word {
-        font-size: 2rem;         /* Increase font size */
-        font-weight: bold;         /* Make it bold */
-        margin-right: 5px;         /* Add a little space after the first word */
-    }
 
 }
 
