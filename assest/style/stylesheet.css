@@ -1643,9 +1643,9 @@ footer {
     }
 
     /*footer*/
-    /*#footerAboutDis>p{
+    #footerAboutDis>p{
         text-align: center;
-    }*/
+    }
 
 }
 
