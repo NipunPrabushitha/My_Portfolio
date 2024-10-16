@@ -11,7 +11,24 @@ html{
 }
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
-
+.section-title {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+    font-variation-settings:
+            "EDPT" 100,
+            "EHLT" 12;
+    /* font-family: 'Arial', sans-serif;*/   /* Clean, common font */
+    font-size: 7rem;                    /* Moderate size for clear visibility */
+    /* font-weight: bold;*/                  /* Bold to emphasize the title */
+    /*color: #FFC300;*/                        /* Dark color for good readability */
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-shadow: 3px 3px 6px rgba(128, 128, 128, 1);
+}
 
 /* Style for the social media icons */
 .social-icons a {
@@ -49,13 +66,13 @@ html{
     margin-top:15px;
 }
 #navBar{
-    width: 100%;
+    width: 100%;/*blnnaaaa*/
 }
 #navigation{
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100%;  /*blnnaaaa*/
     z-index: 9999;
     background: rgb(1,0,14);
     background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
@@ -393,7 +410,6 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
 #about>h2{
     display:flex;
     justify-content: center;
-    margin-top: 60px;
 }
 #about>div{
     display: flex;
@@ -433,27 +449,7 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
     color: #ffffff;            /* White color */
     margin-right: 5px;         /* Add a little space after the first word */
 }
-.section-title {
-    font-family: "Nabla", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0;
-    font-variation-settings:
-            "EDPT" 100,
-            "EHLT" 12;
-   /* font-family: 'Arial', sans-serif;*/   /* Clean, common font */
-    font-size: 7rem;                    /* Moderate size for clear visibility */
-   /* font-weight: bold;*/                  /* Bold to emphasize the title */
-    /*color: #FFC300;*/                        /* Dark color for good readability */
-    display:flex;
-    justify-content: center;
-    margin-top: 10px;
-    text-shadow: 3px 3px 6px rgba(128, 128, 128, 1);
-}
-.nabla{
 
-}
 .CVicon{
     filter: invert(100%);   /* Invert the color to white */
 }
@@ -722,11 +718,13 @@ body{
     margin-bottom: 50px;
 }
 
+
+/*Gallery*/
+
 .container {
-    margin: 0 auto;
+    margin:0 auto;
     width: 60%;
 }
-
 
 .gallery-wrap {
     display: flex;
@@ -769,9 +767,6 @@ body{
 }
 
 
-
-
-
 .item-21 {
     background-image: url(../images/KDD065751.png);
 }
@@ -807,7 +802,7 @@ body{
 }
 
 
-
+/*My Photography*/
 
 #photoTest{
     width: 80%;  /*blnna*/
@@ -915,8 +910,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-/*Contact Me*/
 
 
 
@@ -1471,9 +1464,20 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*Media query*/
 
-
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media all and (min-width: 1025px) and (max-width:1440px){
     body {
@@ -1511,16 +1515,31 @@ footer {
     }
 }
 
+
+
+/*........................LAPTOP 1024.................................*/
+
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 
+
 @media all and (min-width: 768px) and (max-width:1024px){
+
+    /*navigation*/
     .fill>div>div:nth-child(2)>ul>li>a{
         font-size:0.6rem;
     }
 
+    /*fonts*/
+    .section-title {
+        font-weight: 400;
+        font-size: 6rem;
+        margin-top: 10px;
+
+    }
     /*Home*/
+
     #home{
         width: 90%;
         height: 600px;
@@ -1562,8 +1581,108 @@ footer {
         height: auto;
     }
 
+    /*!*My Photography*!
+
+    .containerPhoto{
+        width: 750px;
+        height: 450px;
+    }
+
+    .containerPhoto .slidePhoto .itemPhoto{
+        width: 100px;  !*blnna*!
+        height: 180px;
+    }
+
+    .slidePhoto .itemPhoto:nth-child(1),
+    .slidePhoto .itemPhoto:nth-child(2){
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slidePhoto .itemPhoto:nth-child(3){
+        left: 50%;
+    }
+    .slidePhoto .itemPhoto:nth-child(4){
+        left: calc(50% + 100px);  !*blnna*!
+    }
+    .slidePhoto .itemPhoto:nth-child(5){
+        left: calc(50% + 200px);   !*blnna*!
+    }
+
+    !* here n = 0, 1, 2, 3,... *!
+    .slidePhoto .itemPhoto:nth-child(n + 6){
+        left: calc(50% + 300px); !*blnna*!
+        opacity: 0;
+    }
+    #PhotographySEC{
+        width: 100%;
+        height: 600px;
+    }
+
+
+    !*Assignments*!
+    #assignmentSec{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .assignmentClipBoard>img{
+        width:180px;
+    }
+    .assignmentG\&V>img{
+        width:30px;
+    }
+    .assignmentCard{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }*/
+
+    /*About Me*/
+
+    #aboutPhoto{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 60px;
+    }
+    #aboutPhoto>img{
+        width:310px;
+        height: auto;
+    }
+    #about>div>div:nth-child(2)>div:nth-child(2){
+        margin: 50px;
+    }
+    #aboutDis{
+        margin: 50px;
+    }
+    .about-description p {
+        font-size: 1.2rem;           /* Set text size to 1.2rem */
+        line-height: 1.4;            /* Improve readability with proper line height */
+        font-weight: 400;            /* Regular font weight */
+        margin-bottom: 10px;         /* Add space after paragraph */
+    }
+    .first-word {
+        font-size: 2rem;         /* Increase font size */
+        font-weight: bold;         /* Make it bold */
+        margin-right: 5px;         /* Add a little space after the first word */
+    }
 
 }
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 @media all and (min-width:425px) and (max-width: 767px){
 
     #about>div{
