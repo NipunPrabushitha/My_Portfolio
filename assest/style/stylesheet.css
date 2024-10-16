@@ -1625,8 +1625,27 @@ footer {
 
      /*Contact Me*/
 
+    #CInfoTopic>h3{
+        font-size: 2.4rem;
+    }
+    #contactInfoDes>p{
+        font-size: 1.5rem;
+        margin-top:18px;
+        margin-bottom:20px;
+    }
+    #contactInfoIcons>img{
+        margin-top:20px;
+        margin-bottom:21px;
+    }
+    #contactMeImage>img{
+        width:400px;
+        height: auto;
+    }
 
-
+    /*footer*/
+    /*#footerAboutDis>p{
+        text-align: center;
+    }*/
 
 }
 
