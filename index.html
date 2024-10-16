@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#homeMain">Home</a></li>
                         <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#education">Education</a></li>
                         <li><a href="index.html#projects">Projects</a></li>
@@ -41,14 +41,8 @@
     <section id="homeMain">
         <!--Home-->
         <section id="home">
-            <div>
-                <div id="image">
-                    <div class="block" id="homePhoto">
-                        <img src="assest/images/homeImage.jpg" alt="Nipun Prabushitha" width="450">
-                    </div>
-                </div>
-            </div>
-            <div class="homeGrid" id="circles">   <!--2 circles-->
+            <div id="homeSub">
+            <div  id="circles">   <!--2 circles-->
                 <div>
                     <div class="circle" id="circle1"></div>
                 </div>
@@ -57,7 +51,7 @@
                 </div>
 
             </div>
-            <div class="homeGrid">
+            <div id="homeMyName">
                 <div>
                     <h1>Nipun<br>Prabushitha</h1>
                 </div>
@@ -66,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="homeGrid" id="homeIcons">
+            <div id="homeIcons">
                 <div>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/nipun.prabushitha?mibextid=ZbWKwL" target="_blank">
@@ -85,6 +79,14 @@
                 </div>
                 <div>
                     <button class="button-85" role="button">HIRE ME</button>
+                </div>
+            </div>
+            </div>
+            <div>
+                <div id="image">
+                    <div class="block" id="homePhoto">
+                        <img src="assest/images/homeImage.jpg" alt="Nipun Prabushitha" width="450">
+                    </div>
                 </div>
             </div>
         </section>
@@ -553,25 +555,25 @@
 
             <form method="post" action="/">
                 <div>
-                    <label for="name">
+                    <label class="inputFields" for="name">
                         <span class="required">Name</span>
                         <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
                     </label>
                 </div>
                 <div>
-                    <label for="email">
+                    <label class="inputFields" for="email">
                         <span class="required">Email</span>
                         <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
                     </label>
                 </div>
                 <div>
-                    <label for="message">
+                    <label class="inputFields" for="message">
                         <span class="required">Message</span>
                         <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea>
                     </label>
                 </div>
                 <div>
-                    <button name="submit" type="submit" id="submit" >SEND</button>
+                    <button class="button-85" name="submit" type="submit" id="submit" >SEND</button>
                 </div>
             </form>
         </div>

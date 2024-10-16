@@ -41,7 +41,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid red;*/
 }
 #navBar>nav>div>div:nth-child(1)>img{
     margin-top:15px;
@@ -61,36 +60,54 @@ html{
 #sectionMain{
     width:100%;
 }
+
+/*Home*/
+
+
+
 #home{
-    /*position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom:0;
-    margin: auto;*/
-    width: 80%;
+    width: 90%;
     height: 780px;
-    /*border: 1px solid red;*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
-#home>div:nth-child(1){
-    grid-column: 2/3;
-    grid-row: 1/4;
-    /*border: 1px solid red;*/
+#homeSub{
+    display: flex;
+    flex-direction: column;
+}
+#circles{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+#circles>div:first-child{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+#circles>div:nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
 }
 #circle1{
+    margin-top: 30px;
+    margin-bottom: 50px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background: #FFC300;
     animation: pop 1s infinite;
 }
+
 #circle2{
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    margin-right: 50px;  /*blnnaaaa*/
     background: #FFC300;
     animation: pop 1s infinite;
 }
@@ -107,49 +124,33 @@ html{
     justify-content:center;
     width: 100%;
     height: 800px;
-    padding-top:120px
-    /*border: 3px solid yellow;*/
+    padding-top:120px;
 }
-#home>div:nth-child(3)>div:nth-child(2)>h2{
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    margin:0;
-    margin-bottom: 40px;
-}
-#home>div:nth-child(3)>div:nth-child(2)>h2>span{
-    color: #FFC300;
-}
-.homeGrid{
-    position: relative;
-}
-#home>div:nth-child(2)>div:nth-child(1){
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-#home>div:nth-child(2)>div:nth-child(2){
-    position: absolute;
-    bottom: -35px;
-    right: 60px;
-}
-#home>div:nth-child(3)>div:nth-child(1)>h1{
+#homeMyName>div:first-child>h1{
     font-size: 120px;
     color: #FFC300;
     text-align: center;
     margin:0;
     margin-bottom: 20px;
 }
+#homeMyName>div:nth-child(2)>h2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin:0;
+    margin-bottom: 40px;
+}
+#homeMyName>div:nth-child(2)>h2>span{
+    color: #FFC300;
+}
+.homeGrid{
+
+}
 #image{
     display:flex;
     justify-content: center;
     margin-top: 6%;
 }
-/*#homePhoto>img{
-    !*border: 10px solid #FFC300;*!
-    width: 450px;
-    height:auto;
-}*/
 
 .block {
     position: relative;
@@ -188,12 +189,7 @@ html{
 }
 
 #homeName{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+
 }
 #homeIcons>div{
     /*border: 1px solid red;*/
@@ -1067,6 +1063,7 @@ body{
     background-repeat: no-repeat;
 }
 
+/* contact Me*/
 
 #contactFull{
     width: 100%;
@@ -1083,6 +1080,16 @@ body{
 #ContactTop>h1 {
     margin: 10px 0 0 0;
     margin: 30px;
+    font-size: 3rem;
+}
+.required{
+    font-size: 1.5rem;
+}
+.inputFields>input{
+    margin-top: 10px;
+}
+.inputFields>textarea{
+    margin-top: 10px;
 }
 #ContactTop{
     width: 100%;
@@ -1411,48 +1418,6 @@ footer {
         justify-content: center;
         width: 100vw;
         z-index: 9999;
-    }
-
-
-    #home{
-        width: 100%;
-        height: 80vh;
-        /*border: 1px solid red;*/
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        /*border: 3px solid red;*/
-    }
-    #homePhoto>img{
-        width:300px;
-        height:auto;
-    }
-    #circle1{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    #circle2{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-    #homeMain{
-        position: relative;
-        width: 100vw;
-        height: 650px;
-        /*border: 3px solid yellow;*/
-    }
-    #home>div:nth-child(3)>div:nth-child(2)>h2{
-        font-size: 35px;
-        text-align: center;
-        margin:0;
-        margin-bottom: 30px;
-    }
-    #home>div:nth-child(2)>div:nth-child(1){
-        position: absolute;
-        top: 70px;
-        left: 40px;
     }
 }
 
