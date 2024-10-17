@@ -1915,6 +1915,96 @@ footer {
     }
 
 
+    /*Skills*/
+
+    .containerH {
+        position: relative;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    /* Hexagons Animations */
+
+
+    .hexagons {
+        min-width: 340px;
+        width: 80%;
+        text-align: center;
+    }
+
+
+    .hexagons__cell {
+        display: inline-block;
+        position: relative;
+        width: 120px; /* Doubled width */
+        height: 60px; /* Doubled height */
+        background-color: #14172a;
+        margin: 40px 4px; /* Adjusted margin */
+        animation: fadeHexagon infinite cubic-bezier(0.445, 0.05, 0.55, 0.95) 4s;
+    }
+
+    .hexagons__cell:before,
+    .hexagons__cell:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        border-left: 60px solid transparent; /* Adjusted for larger hexagons */
+        border-right: 60px solid transparent; /* Adjusted for larger hexagons */
+    }
+
+    .hexagons__cell:before {
+        bottom: 100%;
+        border-bottom: 35px solid #14172a; /* Adjusted for larger hexagons */
+    }
+
+    .hexagons__cell:after {
+        top: 100%;
+        border-top: 35px solid #14172a; /* Adjusted for larger hexagons */
+    }
+    .hexagons__cell--1{
+        background-image: url(../images/Cicon.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--2{
+        background-image: url(../images/CSSI.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--3{
+        background-image: url(../images/htmlI.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--4{
+        background-image: url(../images/photoshopI.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--5{
+        background-image: url(../images/JSI.png); /* Add your image URL here */
+        background-size:40%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--6{
+        background-image: url(../images/mySQLI.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hexagons__cell--7{
+        background-image: url(../images/javaI.png); /* Add your image URL here */
+        background-size:50%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
 
 
 
