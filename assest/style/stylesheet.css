@@ -450,6 +450,10 @@ nav.fill > div > div:nth-child(2) > ul > li > a:hover:after {
 .CVicon{
     filter: invert(100%);   /* Invert the color to white */
 }
+
+
+/*Education*/
+
 .edu{
     display: flex;
     justify-content: center;
@@ -488,6 +492,9 @@ margin: 50px;
     text-align: end;
 }
 
+
+
+/*Projects*/
 
 #prjAll{
     margin-bottom: 100px;
@@ -570,6 +577,10 @@ margin: 50px;
 .prjCard>div>div:nth-child(2)>h3{
     color: black;
 }
+
+
+
+/*Assignments*/
 
 #assignmentSec{
     display: grid;
@@ -1775,6 +1786,27 @@ footer {
         width: 12px;
         height: auto;
     }
+
+    /*Education*/
+
+    .eduImage{
+        margin: 30px;
+    }
+    .eduImage>img{
+        width: 100px;
+    }
+    .edutext{
+        text-align: end;
+    }
+    .eduFont>h3{
+        font-size: 1rem;
+    }
+    .eduFont>p{
+        font-size: 0.7rem;
+    }
+
+
+
 
 }
 @media all and (min-width:375px) and (max-width: 424px){
