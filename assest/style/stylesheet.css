@@ -163,9 +163,6 @@ html{
 #homeMyName>div:nth-child(2)>h2>span{
     color: #FFC300;
 }
-.homeGrid{
-
-}
 #image{
     display:flex;
     justify-content: center;
@@ -1671,6 +1668,68 @@ footer {
         font-size: 4rem;
         margin-top: 5px;
 
+    }
+
+    /*Home*/
+
+    #home{
+        width: 90%;
+        height: 400px;
+
+    }
+    #circle1{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #circle2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 15px;  /*blnnaaaa*/
+    }
+    #homeMain{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        height: 620px;
+        padding-top:120px;
+    }
+    #homeMyName>div:first-child>h1{
+        font-size: 50px;
+        margin-bottom:10px;
+    }
+    #homeMyName>div:nth-child(2)>h2{
+        font-size: 20px;
+        margin-bottom:10px;
+
+    }
+    #homeMyName{
+        margin-bottom: 20px;
+    }
+    .social-icons a {
+        font-size: 18px; /* Medium size */
+    }
+    #homePhoto>img{
+        width: 200px;
+        height: auto;
+    }
+    #homeIcons>div:nth-child(2){
+        margin-top: 20px;
+    }
+    #homeButton>button{
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .social-icons>a{
+        margin: 0 8px;
+    }
+
+    #homeIcons>div:first-child{
+        margin: 0;
     }
 
 }
