@@ -1427,7 +1427,7 @@ footer {
 
 
 
-@media all and (min-width: 768px) and (max-width:1024px){
+@media all and (min-width: 769px) and (max-width:1024px){
 
     /*navigation*/
     .fill>div>div:nth-child(2)>ul>li>a{
@@ -1658,13 +1658,21 @@ footer {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-@media all and (min-width:425px) and (max-width: 767px){
+@media all and (min-width:425px) and (max-width: 768px){
 
-    #about>div{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    /*navigation*/
+    .fill>div>div:nth-child(2)>ul>li>a{
+        font-size:0.6rem;
     }
+
+    /*fonts*/
+    .section-title {
+        font-weight: 400;
+        font-size: 4rem;
+        margin-top: 5px;
+
+    }
+
 }
 @media all and (min-width:375px) and (max-width: 424px){
 
