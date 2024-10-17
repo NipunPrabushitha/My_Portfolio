@@ -1806,6 +1806,51 @@ footer {
     }
 
 
+    /*Projects*/
+
+    #prjAll{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .prjCard{
+        width: 180px;
+        height: 320px;
+        background: #aaaaaa;
+        border-radius:5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #prjImage1>img{
+        width: 120px;
+        height: auto;
+    }
+    #prjImage2>img{
+        width: 120px;
+        height: auto;
+    }
+
+    #prjImage3>img{
+        width: 120px;
+        height: auto;
+    }
+    .prjName>h3{
+        font-size: 1rem;
+    }
+    .prjDescription>p{
+        font-size: 0.8rem;
+    }
+    .prjButton>a>button{
+        font-size: 10px;
+    }
+    .button-27{
+        width: 100px;
+        min-height: 10px;
+    }
+
+
+
+
 
 
 }
