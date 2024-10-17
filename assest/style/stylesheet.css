@@ -2004,8 +2004,36 @@ footer {
         background-repeat: no-repeat;
     }
 
-
-
+    /*Contact Me*/
+    #CInfoTopic>h3{
+        font-size: 1.8rem;
+    }
+    #contactInfoDes>p{
+        font-size: 1rem;
+        margin-top:18px;
+        margin-bottom:20px;
+    }
+    #contactInfoIcons>img{
+        width: 30px;
+        height: auto;
+        margin-top:20px;
+        margin-bottom:21px;
+    }
+    #ContactTop>h1{
+        font-size: 2rem;
+    }
+    .required{
+        font-size: 0.8rem;
+    }
+    #contactMeImage>img{
+        width:300px;
+        height: auto;
+    }
+    #contactMeButton>button{
+        width:60px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
 
 
 }
