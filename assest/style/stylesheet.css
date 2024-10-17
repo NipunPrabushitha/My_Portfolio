@@ -1848,7 +1848,26 @@ footer {
         min-height: 10px;
     }
 
-
+    /*Assignments*/
+    #assignmentSec{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .assignmentClipBoard>img{
+        width:100px;
+    }
+    .assignmentG\&V>img{
+        width:20px;
+    }
+    .assignmentCard{
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 8px;
+    }
+    .assignmentNumber>h2{
+        font-size: 1rem;
+    }
 
 
 
