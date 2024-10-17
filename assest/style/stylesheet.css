@@ -1662,6 +1662,7 @@ footer {
 
 
 
+/*..................................Tablet(768).............................................*/
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1868,6 +1869,51 @@ footer {
     .assignmentNumber>h2{
         font-size: 1rem;
     }
+
+
+    /*My photography*/
+
+    .containerPhoto{
+        width: 600px;
+        height: 350px;
+    }
+
+    .containerPhoto .slidePhoto .itemPhoto{
+        width: 100px;  /*blnna*/
+        height: 180px;
+    }
+
+    .slidePhoto .itemPhoto:nth-child(1),
+    .slidePhoto .itemPhoto:nth-child(2){
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slidePhoto .itemPhoto:nth-child(3){
+        left: 50%;
+    }
+    .slidePhoto .itemPhoto:nth-child(4){
+        left: calc(50% + 70px);  /*blnna*/
+    }
+    .slidePhoto .itemPhoto:nth-child(5){
+        left: calc(50% + 140px);   /*blnna*/
+    }
+
+    /* here n = 0, 1, 2, 3,... */
+    .slidePhoto .itemPhoto:nth-child(n + 6){
+        left: calc(50% + 210px); /*blnna*/
+        opacity: 0;
+    }
+    #PhotographySEC{
+        width: 100%;
+        height: 500px;
+    }
+
 
 
 
