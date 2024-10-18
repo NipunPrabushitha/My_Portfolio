@@ -2366,6 +2366,8 @@ footer {
 
     /*Projects*/
 
+    /*Projects*/
+
     #prjAll{
         margin-bottom: 40px;
         margin-top: 40px;
@@ -2387,6 +2389,23 @@ footer {
         width: 70px;
         height: auto;
     }
+
+    #prjImage3>img{
+        width: 70px;
+        height: auto;
+    }
+    .prjName>h3{
+        font-size: 0.5rem;
+    }
+    .prjDescription>p{
+        font-size: 0.4rem;
+    }
+    .prjButton>a>button{
+        width: 50px;
+        height: 2px;
+        font-size: 4px;
+    }
+
 
 
 }
