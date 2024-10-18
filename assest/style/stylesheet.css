@@ -2278,7 +2278,7 @@ footer {
         font-size: 15px; /* Medium size */
     }
     #homePhoto>img{
-        width: 100px;
+        width: 150px;
         height: auto;
     }
     #homeIcons>div:nth-child(2){
