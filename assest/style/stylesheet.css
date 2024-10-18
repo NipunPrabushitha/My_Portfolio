@@ -2184,7 +2184,7 @@ footer {
     /*Topic*/
 
     .Topic{
-        padding-top: 60px;
+        padding-top: 70px;
     }
 
     /*fonts*/
@@ -2298,10 +2298,8 @@ footer {
     }
 
     /*About me*/
-
-    #about{
-        padding-top: 0;
-        padding-bottom: 0;
+    #sectionMain{
+        margin-top:60px;
     }
 
     #aboutMe{
@@ -2684,7 +2682,7 @@ footer {
     /*Topic*/
 
     .Topic{
-        padding-top: 60px;
+        padding-top: 70px;
     }
 
     /*fonts*/
@@ -2800,9 +2798,9 @@ footer {
 
     /*About me*/
 
-    #about{
-        padding-top: 0;
-        padding-bottom: 0;
+    /*About me*/
+    #sectionMain{
+        margin-top:60px;
     }
 
     #aboutMe{
