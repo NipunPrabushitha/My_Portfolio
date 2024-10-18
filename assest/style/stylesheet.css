@@ -2568,7 +2568,74 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
     }
+    /*Contact Me*/
+    #contactInfoIcons{
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        height: 100px;
+    }
+    #contactInfoDes{
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        height: 100px;
+    }
+    #CInfoMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    #conInfoDesSub{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #contactInfoFull{
+        width: 100%;
+        height: 200px; /*blnnaaaaaaaaaa*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #CInfoTopic>h3{
+        font-size: 1rem;
+    }
+    #contactInfoDes{
+        justify-content: space-evenly;
+    }
+    #contactInfoDes>p{
+        font-size: 0.5rem;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    #contactInfoIcons>img{
+        width: 10px;
+        height: auto;
+        margin-top:0;
+        margin-bottom:0;
+        margin-right: 8px;
+    }
+    #ContactTop>h1{
+        font-size: 2rem;
+    }
+    .required{
+        font-size: 0.5rem;
+    }
+    #contactMeImage>img{
+        width:120px;
+        height: auto;
+        margin-left: 10px;
+        margin-right:30px;
+    }
+    #contactMeButton>button{
+        width:40px;
+        height: 10px;
+        font-size: 0.4rem;
+    }
 
 
 }
