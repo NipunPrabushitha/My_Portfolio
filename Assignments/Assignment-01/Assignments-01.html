@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../../Acessts/image/Logo%20Top%20And%20Back.png">
+    <title>Assignment_01</title>
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                    "wdth" 100;
+        }
+        body{
+            background: rgb(1,0,14);
+            background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
+            color: white;
+            overflow-x:hidden ;
+            margin: 0;
+        }
+        .section-title {
+            font-family: "Nabla", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 0;
+            font-variation-settings:
+                    "EDPT" 100,
+                    "EHLT" 12;
+            /* font-family: 'Arial', sans-serif;*/   /* Clean, common font */
+            font-size: 7rem;                    /* Moderate size for clear visibility */
+            /* font-weight: bold;*/                  /* Bold to emphasize the title */
+            /*color: #FFC300;*/                        /* Dark color for good readability */
+            display:flex;
+            justify-content: center;
+            margin-top: 10px;
+            text-shadow: 3px 3px 6px rgba(128, 128, 128, 1);
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            background: rgb(1,0,14);
+            background: linear-gradient(90deg, rgba(1,0,14,1) 50%, rgba(4,4,79,1) 100%);
+            color: white;
+            overflow-x:hidden ;
+            margin: 0;
+        }
+        /*#hed{
+            color: black;
+            text-align: center;
+            font-size: 100px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50vw;
+            height: 80vh;
+            background: rgb(103,103,103);
+            background: linear-gradient(180deg, rgba(103,103,103,1) 0%, rgba(52,52,52,1) 46%, rgba(1,1,1,1) 100%);
+            box-shadow: 0 0 10px rgba(0,0,0);
+        }
+        .label{
+            height: 8vh;
+            width: 40vw;
+            gap: 10px;
+        }
+
+
+        !* CSS *!
+        .button-28 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #000000;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            min-height: 60px;
+            min-width: 0;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 100%;
+            will-change: transform;
+        }
+
+        .button-28:disabled {
+            pointer-events: none;
+        }
+
+        .button-28:hover {
+            color: #ffffff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-28:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        #hed{
+            color: black;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        h1{
+            font-size: 2.5rem;
+            font-family: 'Montserrat';
+            font-weight: normal;
+            color: #444;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+            max-width: 80rem;
+        }
+
+        .cols{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .col{
+            width: calc(25% - 2rem);
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .container{
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+        }
+
+                                                               /* CSS */
+                                                           .button-28 {
+                                                               appearance: none;
+                                                               background-color: transparent;
+                                                               border: 2px solid #1A1A1A;
+                                                               border-radius: 15px;
+                                                               box-sizing: border-box;
+                                                               color: #3B3B3B;
+                                                               cursor: pointer;
+                                                               display: inline-block;
+                                                               font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                                                               font-size: 16px;
+                                                               font-weight: 600;
+                                                               line-height: normal;
+                                                               margin: 0;
+                                                               min-height: 60px;
+                                                               min-width: 0;
+                                                               outline: none;
+                                                               padding: 16px 24px;
+                                                               text-align: center;
+                                                               text-decoration: none;
+                                                               transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                                                               user-select: none;
+                                                               -webkit-user-select: none;
+                                                               touch-action: manipulation;
+                                                               width: 100%;
+                                                               will-change: transform;
+                                                           }
+
+        .button-28:disabled {
+            pointer-events: none;
+        }
+
+        .button-28:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .button-28:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+        .front,
+        .back{
+            background-size: cover;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+            border-radius: 10px;
+            background-position: center;
+            -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            text-align: center;
+            min-height: 280px;
+            height: auto;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+
+
+        .back{
+            background: #cedce7;
+            background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+            background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+            background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+        }
+
+        .front:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: block;
+            opacity: .6;
+            background-color: #000;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+        .container:hover .front,
+        .container:hover .back{
+            -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        }
+
+        .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .inner{
+            -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+            top: 50%;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: 1px solid transparent;
+            -webkit-perspective: inherit;
+            perspective: inherit;
+            z-index: 2;
+        }
+
+        .container .back{
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .container .front{
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .container:hover .back{
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .container:hover .front{
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .front .inner p{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .front .inner p:after{
+            content: '';
+            width: 4rem;
+            height: 2px;
+            position: absolute;
+            background: #C6D4DF;
+            display: block;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -.75rem;
+        }
+
+        .front .inner span{
+            color: rgba(255,255,255,0.7);
+            font-family: 'Montserrat';
+            font-weight: 300;
+        }
+
+        @media screen and (max-width: 64rem){
+            .col{
+                width: calc(33.333333% - 2rem);
+            }
+        }
+
+        @media screen and (max-width: 48rem){
+            .col{
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media screen and (max-width: 32rem){
+            .col{
+                width: 100%;
+                margin: 0 0 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <div class="wrapper">
+        <h1 id="hed" class="section-title">Assignment 01</h1>
+        <div class="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 1</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case1.html"><button class="button-28" role="button">Case 01</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 2</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case2.html"><button class="button-28" role="button">Case 02</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 3</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case3.html"><button class="button-28" role="button">Case 03</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 4</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case4.html"><button class="button-28" role="button">Case 04</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 5</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case5.html"><button class="button-28" role="button">Case 05</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                <div class="container">
+                    <div class="front" style="background-image: url(../Assignment-01/images/AssignmentCardB.jpg)">
+                        <div class="inner">
+                            <p>Case 6</p>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="inner">
+                            <a href="cases/case6.html"><button class="button-28" role="button">Case 06</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

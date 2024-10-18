@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 04</title>
+    <link rel="stylesheet" href="../../../normalize.css">
+
+    <style>
+        .card{
+            height: 100vh;
+            width: 99vw;
+            position: relative;
+        }
+        .nav{
+            height: 50px;
+            width: 100%;
+            color: black;
+            position: sticky;
+            top: 0;
+            /*background-color: red;*/
+        }
+        .nav>div{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            font-size: 20px;
+            margin: auto;
+        }
+        .card>div:last-child{
+            position: absolute;
+            font-size: 100px;
+            width: fit-content;
+            height: fit-content;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section:first-child>div:first-child{
+            background-color: blue;
+        }
+        section:nth-child(2)>div:first-child{
+            background-color: red;
+        }
+        section:nth-child(3)>div:first-child{
+            background-color: purple;
+        }
+        section:nth-child(4)>div:first-child{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<section class="card" id="1">
+    <div class="nav">
+        <div> card 01</div>
+    </div>
+    <div>Hello</div>
+</section>
+<section class="card" id="2">
+    <div class="nav">
+        <div> card 02</div>
+    </div>
+    <div>How</div>
+</section>
+<section class="card" id="3">
+    <div class="nav">
+        <div> card 03</div>
+    </div>
+    <div>Are</div>
+</section>
+<section class="card" id="4">
+    <div class="nav">
+        <div> card 04</div>
+    </div>
+    <div>You....?</div>
+</section>
+</body>
+</html>

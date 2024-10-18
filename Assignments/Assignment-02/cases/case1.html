@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_01</title>
+    <meta name="viewport" content="width=device-width, initial-">
+    <link rel="stylesheet" href="../../../normalize.css">
+</head>
+<style>
+    body{/*page eke idak thinawanan eka hide karanne meken*/
+        overflow: hidden;
+    }
+    .lokuKotu{
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+    }
+    body>section:nth-child(1) {
+        background-color: red;
+        left: 0;
+    }
+    body>section:nth-child(2){
+        background-color: green;
+        right: 0;
+    }
+    body>section:nth-child(3){
+        background-color: orange;
+        bottom: 0;
+        left: 0;
+    }
+    body>section:nth-child(4){
+        background-color: deeppink;
+        bottom: 0;
+        right: 0;
+    }
+    .cer{
+        background-color: white;
+        width: 10vw;
+        height: 10vw;
+        border-radius:300px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .kotu{
+        background-color: red;
+        width: 3vw;
+        height: 3vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .corner {
+        background: white;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 300px;
+        position: absolute;
+    }
+
+    #corner1{
+        left: calc(-15vw/2);
+        top: calc(-15vw/2);}
+    #corner2 {
+        right: calc(-15vw/2);
+        top: calc(-15vw/2);
+    }
+    #corner3 {
+        right: 0;
+        left: 0;
+        top: calc(-15vw/2);
+        margin: auto;
+    }
+    #corner4 {
+        bottom: calc(-15vw/2);
+        left: calc(-15vw/2);
+    }
+    #corner5 {
+        bottom: calc(-15vw/2);
+        right: calc(-15vw/2);
+    }
+    #corner6 {
+        bottom: calc(-15vw/2);
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #Mid>div{
+        background-color: white;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    #Mid>div>div{
+        background-color:red;
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        border-radius: 200px;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+</style>
+<body>
+<section class="lokuKotu">
+    <div class="cer">
+        <div class="kotu"></div>
+    </div>
+</section>
+<section class="lokuKotu">
+    <div class="cer">
+        <div class="kotu"></div>
+    </div>
+</section>
+<section class="lokuKotu">
+    <div class="cer">
+        <div class="kotu"></div>
+    </div>
+</section>
+<section class="lokuKotu">
+    <div class="cer">
+        <div class="kotu"></div>
+    </div>
+</section>
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+<section id="Mid">
+    <div>
+        <div></div>
+    </div>
+</section>
+</body>
+</html>

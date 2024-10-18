@@ -721,7 +721,7 @@ margin: 50px;
 .assignmentClipBoard>img{
     width:250px;
 }
-.assignmentG\&V>img{
+.assignmentG\&V>a>img{
     width:40px;
 }
 .assignmentClipBoard{
@@ -1672,7 +1672,7 @@ footer {
     .assignmentClipBoard>img{
         width:180px;
     }
-    .assignmentG\&V>img{
+    .assignmentG\&V>a>img{
         width:30px;
     }
     .assignmentCard{
@@ -1969,7 +1969,7 @@ footer {
     .assignmentClipBoard>img{
         width:100px;
     }
-    .assignmentG\&V>img{
+    .assignmentG\&V>a>img{
         width:20px;
     }
     .assignmentCard{
@@ -2413,7 +2413,7 @@ footer {
     .assignmentClipBoard>img{
         width:60px;
     }
-    .assignmentG\&V>img{
+    .assignmentG\&V>a>img{
         width:10px;
     }
     .assignmentCard{
@@ -2913,7 +2913,7 @@ footer {
     .assignmentClipBoard>img{
         width:60px;
     }
-    .assignmentG\&V>img{
+    .assignmentG\&V>a>img{
         width:10px;
     }
     .assignmentCard{
