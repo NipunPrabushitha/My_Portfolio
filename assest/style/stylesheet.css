@@ -2342,39 +2342,45 @@ footer {
 
     /*About me*/
 
+    #aboutMe{
+        flex-direction: column;
+        justify-content: center;
+    }
+
     #aboutPhoto{
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin-top:30px ;
+        margin-bottom: -30px;
     }
     #aboutPhoto>img{
-        width:240px;
+        width:100px;
         height: auto;
     }
     #about>div>div:nth-child(2)>div:nth-child(2){
-        margin: 50px;
+        margin: 0px;
     }
     #aboutDis{
         margin: 40px;
+        margin-bottom:0 ;
+
     }
     .about-description p {
-        font-size: 1rem;           /* Set text size to 1.2rem */
+        font-size: 0.5rem;           /* Set text size to 1.2rem */
         line-height: 1.4;            /* Improve readability with proper line height */
         font-weight: 400;            /* Regular font weight */
         margin-bottom: 10px;         /* Add space after paragraph */
     }
     .first-word {
-        font-size: 1.5rem;         /* Increase font size */
+        font-size: 1rem;         /* Increase font size */
         font-weight: bold;         /* Make it bold */
-        margin-right: 5px;         /* Add a little space after the first word */
+        margin-right: 2px;         /* Add a little space after the first word */
     }
     #cvButton>a>button{
-        width: 150px;
-        height: 35px;
-        font-size: 12px;
+        width: 100px;
+        height: 26px;
+        font-size: 8px;
     }
     #cvButton>a>button>img{
-        width: 12px;
+        width: 8px;
         height: auto;
     }
 
