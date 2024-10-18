@@ -2406,6 +2406,26 @@ footer {
         font-size: 4px;
     }
 
+    /*Assignments*/
+    #assignmentSec{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .assignmentClipBoard>img{
+        width:60px;
+    }
+    .assignmentG\&V>img{
+        width:10px;
+    }
+    .assignmentCard{
+        margin-right: 4px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+    }
+    .assignmentNumber>h2{
+        font-size: 0.5rem;
+    }
 
 
 }
