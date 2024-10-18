@@ -2387,19 +2387,19 @@ footer {
     /*Education*/
 
     .eduImage{
-        margin: 30px;
+        margin: 10px;
     }
     .eduImage>img{
-        width: 100px;
+        width: 50px;
     }
     .edutext{
         text-align: end;
     }
     .eduFont>h3{
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
     .eduFont>p{
-        font-size: 0.7rem;
+        font-size: 0.3rem;
     }
 
 
