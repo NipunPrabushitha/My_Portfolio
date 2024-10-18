@@ -2427,6 +2427,60 @@ footer {
         font-size: 0.5rem;
     }
 
+    /*My photography*/
+
+    #PhotographySEC{
+        width: 100%;
+        height: 280px;
+    }
+
+    #photoTest{
+        width: 80%;  /*blnna*/
+        height: 100%;
+        box-sizing: border-box;;
+    }
+    #PhotographySEC{
+
+    }
+
+    .containerPhoto{
+        width: 250px;
+        height: 150px;
+    }
+
+    .containerPhoto .slidePhoto .itemPhoto{
+        width: 60px;  /*blnna*/
+        height: 60px;
+    }
+
+    .slidePhoto .itemPhoto:nth-child(1),
+    .slidePhoto .itemPhoto:nth-child(2){
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slidePhoto .itemPhoto:nth-child(3){
+        left: 50%;
+    }
+    .slidePhoto .itemPhoto:nth-child(4){
+        left: calc(50% + 30px);  /*blnna*/
+    }
+    .slidePhoto .itemPhoto:nth-child(5){
+        left: calc(50% + 60px);   /*blnna*/
+    }
+
+    /* here n = 0, 1, 2, 3,... */
+    .slidePhoto .itemPhoto:nth-child(n + 6){
+        left: calc(50% + 90px); /*blnna*/
+        opacity: 0;
+    }
+
+
 
 }
 
