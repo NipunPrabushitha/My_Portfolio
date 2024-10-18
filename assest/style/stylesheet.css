@@ -2364,6 +2364,30 @@ footer {
         font-size: 0.3rem;
     }
 
+    /*Projects*/
+
+    #prjAll{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .prjCard{
+        width: 90px;
+        height: 180px;
+        background: #aaaaaa;
+        border-radius:5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #prjImage1>img{
+        width: 70px;
+        height: auto;
+    }
+    #prjImage2>img{
+        width: 70px;
+        height: auto;
+    }
+
 
 }
 
