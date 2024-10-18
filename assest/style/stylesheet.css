@@ -660,7 +660,7 @@ margin: 50px;
                                                        font-weight: 600;
                                                        line-height: normal;
                                                        margin: 0;
-                                                       min-height: 60px;
+                                                       min-height: 0;
                                                        min-width: 0;
                                                        outline: none;
                                                        padding: 16px 24px;
@@ -2410,8 +2410,8 @@ footer {
         margin-top: 40px;
     }
     .prjCard{
-        width: 180px;
-        height: 320px;
+        width: 90px;
+        height: 180px;
         background: #aaaaaa;
         border-radius:5%;
         display: flex;
@@ -2419,30 +2419,28 @@ footer {
         align-items: center;
     }
     #prjImage1>img{
-        width: 120px;
+        width: 70px;
         height: auto;
     }
     #prjImage2>img{
-        width: 120px;
+        width: 70px;
         height: auto;
     }
 
     #prjImage3>img{
-        width: 120px;
+        width: 70px;
         height: auto;
     }
     .prjName>h3{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     .prjDescription>p{
-        font-size: 0.8rem;
+        font-size: 0.4rem;
     }
     .prjButton>a>button{
-        font-size: 10px;
-    }
-    .button-27{
-        width: 100px;
-        min-height: 10px;
+        width: 50px;
+        height: 2px;
+        font-size: 4px;
     }
 
     /*Assignments*/
