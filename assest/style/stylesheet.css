@@ -835,6 +835,15 @@ margin: 50px;
 
 /*My Photography*/
 
+
+#PhotographySEC{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #photoTest{
     width: 80%;  /*blnna*/
     height: 100%;
@@ -934,13 +943,7 @@ margin: 50px;
     background: #ababab;
     color: #fff;
 }
-#PhotographySEC{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
@@ -2027,7 +2030,7 @@ footer {
 
     .containerH {
         position: relative;
-        height: 70vh;
+        height: 520px;
         overflow: hidden;
     }
 
@@ -2450,31 +2453,45 @@ footer {
         grid-template-rows: repeat(4,1fr);
     }
     .assignmentClipBoard>img{
-        width:100px;
+        width:60px;
     }
     .assignmentG\&V>img{
-        width:20px;
+        width:10px;
     }
     .assignmentCard{
-        margin-right: 8px;
-        margin-left: 8px;
-        margin-bottom: 8px;
+        margin-right: 4px;
+        margin-left: 4px;
+        margin-bottom: 4px;
     }
     .assignmentNumber>h2{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 
 
     /*My photography*/
 
+    #PhotographySEC{
+        width: 100%;
+        height: 280px;
+    }
+
+    #photoTest{
+        width: 80%;  /*blnna*/
+        height: 100%;
+        box-sizing: border-box;;
+    }
+    #PhotographySEC{
+
+    }
+
     .containerPhoto{
-        width: 600px;
-        height: 350px;
+        width: 250px;
+        height: 150px;
     }
 
     .containerPhoto .slidePhoto .itemPhoto{
-        width: 100px;  /*blnna*/
-        height: 180px;
+        width: 60px;  /*blnna*/
+        height: 60px;
     }
 
     .slidePhoto .itemPhoto:nth-child(1),
@@ -2492,21 +2509,18 @@ footer {
         left: 50%;
     }
     .slidePhoto .itemPhoto:nth-child(4){
-        left: calc(50% + 70px);  /*blnna*/
+        left: calc(50% + 30px);  /*blnna*/
     }
     .slidePhoto .itemPhoto:nth-child(5){
-        left: calc(50% + 140px);   /*blnna*/
+        left: calc(50% + 60px);   /*blnna*/
     }
 
     /* here n = 0, 1, 2, 3,... */
     .slidePhoto .itemPhoto:nth-child(n + 6){
-        left: calc(50% + 210px); /*blnna*/
+        left: calc(50% + 90px); /*blnna*/
         opacity: 0;
     }
-    #PhotographySEC{
-        width: 100%;
-        height: 500px;
-    }
+
 
 
     /*Skills*/
@@ -2530,10 +2544,10 @@ footer {
     .hexagons__cell {
         display: inline-block;
         position: relative;
-        width: 120px; /* Doubled width */
-        height: 60px; /* Doubled height */
+        width: 60px; /* Doubled width */
+        height: 40px; /* Doubled height */
         background-color: #14172a;
-        margin: 40px 4px; /* Adjusted margin */
+        margin: 20px 4px; /* Adjusted margin */
         animation: fadeHexagon infinite cubic-bezier(0.445, 0.05, 0.55, 0.95) 4s;
     }
 
@@ -2542,18 +2556,18 @@ footer {
         content: "";
         position: absolute;
         left: 0;
-        border-left: 60px solid transparent; /* Adjusted for larger hexagons */
-        border-right: 60px solid transparent; /* Adjusted for larger hexagons */
+        border-left: 30px solid transparent; /* Adjusted for larger hexagons */
+        border-right: 30px solid transparent; /* Adjusted for larger hexagons */
     }
 
     .hexagons__cell:before {
         bottom: 100%;
-        border-bottom: 35px solid #14172a; /* Adjusted for larger hexagons */
+        border-bottom: 18px solid #14172a; /* Adjusted for larger hexagons */
     }
 
     .hexagons__cell:after {
         top: 100%;
-        border-top: 35px solid #14172a; /* Adjusted for larger hexagons */
+        border-top: 18px solid #14172a; /* Adjusted for larger hexagons */
     }
     .hexagons__cell--1{
         background-image: url(../images/Cicon.png); /* Add your image URL here */
