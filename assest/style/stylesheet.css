@@ -6,6 +6,22 @@ body {
     overflow-x:hidden ;
     margin: 0;
 }
+
+
+/*Annimations*/
+
+.open {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-flex;
+    animation-name: open;
+}
+@keyframes open {
+    from { width: 0 }
+}
+
+
 html{
     scroll-behavior: smooth;
 }
