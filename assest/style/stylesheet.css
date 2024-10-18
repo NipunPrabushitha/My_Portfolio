@@ -2346,6 +2346,25 @@ footer {
         height: auto;
     }
 
+    /*Education*/
+
+    .eduImage{
+        margin: 10px;
+    }
+    .eduImage>img{
+        width: 50px;
+    }
+    .edutext{
+        text-align: end;
+    }
+    .eduFont>h3{
+        font-size: 0.6rem;
+    }
+    .eduFont>p{
+        font-size: 0.3rem;
+    }
+
+
 }
 
 
