@@ -2229,7 +2229,7 @@ footer {
     /*Topic*/
 
     .Topic{
-        padding-top: 10px;
+        padding-top: 100px;
     }
 
     /*fonts*/
@@ -2260,21 +2260,21 @@ footer {
         width: 100%;
         height: 100vh;
         background: #2c3e50;
-        top: 120px;
+        top: 60px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
-    #navNames ul li {
+    #navNames>ul>li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 20px 0;
+        line-height: 10px;
     }
-    #navNames ul li a {
-        font-size: 20px;
+    #navNames>ul>li>a {
+        font-size: 2px;
     }
-    #navNames li:hover,
-    #navNames li.active {
+    #navNames>li:hover,
+    #navNames>li.active {
         background: none;
         color: #0082e6;
     }
@@ -2317,7 +2317,7 @@ footer {
 
     }
     #homeMyName{
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .social-icons a {
         font-size: 15px; /* Medium size */
@@ -2344,6 +2344,11 @@ footer {
 
 
     /*About me*/
+
+    #about{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     #aboutMe{
         flex-direction: column;
@@ -2683,26 +2688,37 @@ footer {
 
     /*Footer*/
     #footerLogo>img{
-        width: 100px;
+        width: 60px;
         height: auto;
     }
     #footerName{
+        text-align: center;
         font-size: 1.8rem;
     }
     #creatorName{
-        font-size: 0.8rem;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .social>a{
-        font-size: 20px;
+        font-size: 15px;
         margin: 0 5px;
     }
     #footerAboutDis>p{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
         text-align: center;
     }
     #footerCopyRights{
-        font-size: 0.4rem;
+        font-size: 0.2rem;
         text-align: center;
+    }
+    #footerAbout>h3{
+        font-size: 1rem;
     }
 
 
