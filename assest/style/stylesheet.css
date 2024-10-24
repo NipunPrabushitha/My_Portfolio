@@ -11,7 +11,7 @@ body {
 /*Annimations*/
 
 .open {
-    width: 100%;
+    width: 473px;
     margin: 0 auto;
     overflow: hidden;
     display: inline-flex;
@@ -21,21 +21,30 @@ body {
     from { width: 0 }
 }
 
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
 
 html{
     scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 
 .section-title {
-    font-family: "Nabla", system-ui;
-    font-optical-sizing: auto;
+    font-family: "Bungee Inline", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-bottom: 0;
-    font-variation-settings:
-            "EDPT" 100,
-            "EHLT" 12;
+    color: #FFC300;
     /* font-family: 'Arial', sans-serif;*/   /* Clean, common font */
     font-size: 7rem;                    /* Moderate size for clear visibility */
     /* font-weight: bold;*/                  /* Bold to emphasize the title */
@@ -2757,7 +2766,7 @@ footer {
         width: 90%;
         height: 350px;
         display: flex;
-        flex-direction: column;
+        flex-direction:column ;
         justify-content: space-evenly;
         align-items: center;
 
